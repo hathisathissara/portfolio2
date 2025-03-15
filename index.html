@@ -35,7 +35,7 @@
             content: '';
             width: 100%;
             height: 2px;
-            background: #4299e1;
+            background: transparent;
             position: absolute;
             left: 0;
             bottom: -4px;
@@ -49,7 +49,8 @@
                 top: 60px;
                 left: 0;
                 right: 0;
-                background: linear-gradient(to right, #3b82f6, #9333ea);
+                background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
+                backdrop-filter: blur(10px);
                 padding: 1rem;
                 flex-direction: column;
                 align-items: center;
@@ -57,6 +58,7 @@
 
             #nav-links a {
                 margin: 0.5rem 0;
+                font-size: 1rem;
             }
         }
 
@@ -143,8 +145,8 @@
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-100">
-    <header class="fixed top-0 w-full bg-gradient-to-r from-blue-700 to-purple-800 text-white shadow-lg z-50">
-        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+    <header class="fixed top-0 w-full bg-transparent text-white shadow-lg z-50">
+        <div class="containe</header>r mx-auto flex justify-between items-center px-6 py-4">
             <!-- Brand Logo with Icon -->
             <a href="#home" class="flex items-center space-x-2">
                 <!-- Logo Icon -->
@@ -162,15 +164,15 @@
             <!-- Navigation Links -->
             <nav id="nav-links" class="hidden md:flex items-center space-x-8">
                 <a href="#home"
-                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105">Home</a>
+                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">Home</a>
                 <a href="#about"
-                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105">About</a>
+                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">About</a>
                 <a href="#services"
-                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105">Services</a>
-                <a href="#work" class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105">My
+                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">Services</a>
+                <a href="#work" class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">My
                     Work</a>
                 <a href="#contact"
-                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105">Contact</a>
+                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">Contact</a>
 
                 <!-- Animated Download CV Button -->
                 <a href="assets/hathisa_thissara_2025.pdf" download class="relative group">
@@ -210,7 +212,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-blue-700 to-purple-800 text-white">
+        <div id="mobile-menu" class="hidden md:hidden bg-transparent from-blue-700 to-purple-800 text-white">
             <nav class="flex flex-col space-y-4 py-4 px-6">
                 <a href="#home" class="hover:text-gray-300 transition-all duration-300">Home</a>
                 <a href="#about" class="hover:text-gray-300 transition-all duration-300">About</a>
@@ -237,8 +239,8 @@
 
     <section class="home relative w-screen h-screen flex items-center justify-center text-center bg-cover bg-center"
         id="home"
-        style="background-image: url('https://media.istockphoto.com/id/1309884850/photo/business-cards-stock-illustration.jpg?s=612x612&w=0&k=20&c=7o262CXNGRwlu28Cch3giKlZrWBZCN9fIEYwa9gNaTE=')">
-        <div class="absolute inset-0" id="particles"></div>
+        style="background-image: url('https://img.freepik.com/free-vector/black-background-with-focus-spot-light_1017-27230.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid');">
+        <div class="absolu</section>te inset-0" id="particles"></div>
         <div class="absolute inset-0 bg-black opacity-40 bg-gradient-to-br from-gray-900 to-gray-800"></div>
         <div class="container relative z-10 mx-auto px-4">
             <div class="text-white space-y-6 flex flex-col md:flex-row items-center justify-between">
@@ -293,16 +295,16 @@
                     </a>
                 </div>
                 <!-- Right Side: Profile Image -->
-                <div class="flex justify-center lg:justify-center w-full md:w-1/2">
-                    <div class="relative group w-48 h-48 lg:w-60 lg:h-60">
-                        <img src="images/profilehome.jpg" alt="Profile"
-                            class="w-full h-full object-cover rounded-full shadow-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 opacity-0 group-hover:opacity-40 rounded-full transition duration-500">
-                        </div>
+                <div class="flex justify-center w-full md:w-1/2">
+                    <div
+                        class="relative group w-112 h-112 lg:w-128 lg:h-128 bg-transparent flex items-center justify-center">
                     </div>
+                    <script type="module"
+                        src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+                    <spline-viewer url="https://prod.spline.design/PFFoH7Z3n8Blv2hT/scene.splinecode"></spline-viewer>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
