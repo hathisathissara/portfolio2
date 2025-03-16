@@ -15,6 +15,8 @@
         body {
             overflow-x: hidden;
             /* Prevent horizontal scrolling */
+            scroll-behavior: smooth;
+            /* Enable smooth scrolling */
         }
 
         .fade {
@@ -169,7 +171,8 @@
                     class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">About</a>
                 <a href="#services"
                     class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">Services</a>
-                <a href="#work" class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">My
+                <a href="#work"
+                    class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">My
                     Work</a>
                 <a href="#contact"
                     class="hover:text-gray-300 transition-all duration-300 transform hover:scale-105 text-lg">Contact</a>
@@ -305,7 +308,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
     </section>
 
     <style>
@@ -339,7 +342,7 @@
 
 
     <section class="about py-20 text-gray-50 relative bg-cover bg-center bg-no-repeat" id="about"
-        style="background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvJTIwYWJvdXQlMjAlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww');">
+        style="background-image: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid');">
         <div class="absolute inset-0 bg-gray-900 bg-opacity-80"></div>
         <div class="container mx-auto px-6 lg:px-16 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -426,9 +429,10 @@
         </div>
     </section>
 
-    <section class="services py-16 bg-gradient-to-br from-gray-100 to-gray-300" id="services">
+    <section class="services py-16 bg-gradient-to-br from-gray-100 to-gray-300" id="services"
+        style="background-image: url('https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30461.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid');">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-extrabold mb-12 text-center text-gray-800">
+            <h2 class="text-4xl font-extrabold mb-12 text-center text-white tracking-wide">
                 Our <span class="text-blue-600">Services</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -545,175 +549,188 @@
         </div>
     </section>
 
-    <section class="work py-16 bg-gray-100" id="work">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-extrabold mb-12 text-center text-gray-900 tracking-wide">
-                <span class="text-blue-600">Portfolio</span> Highlights
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://images.unsplash.com/photo-1569322977266-acff659212fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2ViJTIwUGFnZXxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Web Page" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Web Page</h3>
-                    <p class="text-gray-600 text-sm">Crafted a responsive, modern website with seamless navigation for
-                        diverse audiences.</p>
-                </div>
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://images.unsplash.com/photo-1554260570-47e791ab2fc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q29kaW5nJTIwQXBwfGVufDB8fDB8fHww"
-                        alt="Coding App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Coding App</h3>
-                    <p class="text-gray-600 text-sm">Developed a feature-rich coding environment for beginner
-                        programmers.</p>
-                </div>
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://plus.unsplash.com/premium_photo-1683262038148-2ac280407276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VGVjaCUyMEFwcHxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Tech App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Tech App</h3>
-                    <p class="text-gray-600 text-sm">A robust mobile application empowering users with cutting-edge
-                        technology tools.</p>
-                </div>
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://media.istockphoto.com/id/1340516763/photo/empty-classroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=jbYGCEpqm8nTe-qwaydKnKU0zxQ1nYVMBsj2P0Sqez0="
-                        alt="School Management System"
-                        class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">School Management
-                        System</h3>
-                    <p class="text-gray-600 text-sm">Streamlined school operations with an intuitive, all-in-one digital
-                        platform.</p>
-                </div>
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://media.istockphoto.com/id/2084953049/photo/neural-network-nodes-deep-learning-artificial-intelligence-machine-learning-model.webp?a=1&b=1&s=612x612&w=0&k=20&c=kySkpXxwGqj4vuZi3UkHtDioMVvUgXDDvGzrkgonU9Q="
-                        alt="Machine Learning Model" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Machine Learning
-                        Model</h3>
-                    <p class="text-gray-600 text-sm">Designed a predictive analytics model leveraging AI for smarter
-                        decision-making.</p>
-                </div>
-                <div
-                    class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
-                    <img src="https://media.istockphoto.com/id/1342186559/photo/a-business-man-using-a-computer-to-manage-documents-online-document-communication-database.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQFDCEeEbTZpWLHoL6p_dkRYATnL4E5mxJyZObip5tQ="
-                        alt="Data Visualization Tool" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Data Visualization
-                        Tool</h3>
-                    <p class="text-gray-600 text-sm">Built a dynamic tool to visualize complex datasets with clarity and
-                        precision.</p>
+    <section class="work py-16 bg-gray-100" id="work"
+        style="background-image: url('https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid');">
+        <div class="container mx-auto px-4">>
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-extrabold mb-12 text-center text-white tracking-wide">
+                    <span class="text-blue-600">Portfolio</span> Highlights
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1569322977266-acff659212fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2ViJTIwUGFnZXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Web Page" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Web Page</h3>
+                        <p class="text-gray-600 text-sm">Crafted a responsive, modern website with seamless navigation
+                            for
+                            diverse audiences.</p>
+                    </div>
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1554260570-47e791ab2fc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q29kaW5nJTIwQXBwfGVufDB8fDB8fHww"
+                            alt="Coding App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Coding App</h3>
+                        <p class="text-gray-600 text-sm">Developed a feature-rich coding environment for beginner
+                            programmers.</p>
+                    </div>
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://plus.unsplash.com/premium_photo-1683262038148-2ac280407276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VGVjaCUyMEFwcHxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Tech App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Tech App</h3>
+                        <p class="text-gray-600 text-sm">A robust mobile application empowering users with cutting-edge
+                            technology tools.</p>
+                    </div>
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://media.istockphoto.com/id/1340516763/photo/empty-classroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=jbYGCEpqm8nTe-qwaydKnKU0zxQ1nYVMBsj2P0Sqez0="
+                            alt="School Management System"
+                            class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">School
+                            Management
+                            System</h3>
+                        <p class="text-gray-600 text-sm">Streamlined school operations with an intuitive, all-in-one
+                            digital
+                            platform.</p>
+                    </div>
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://media.istockphoto.com/id/2084953049/photo/neural-network-nodes-deep-learning-artificial-intelligence-machine-learning-model.webp?a=1&b=1&s=612x612&w=0&k=20&c=kySkpXxwGqj4vuZi3UkHtDioMVvUgXDDvGzrkgonU9Q="
+                            alt="Machine Learning Model"
+                            class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Machine Learning
+                            Model</h3>
+                        <p class="text-gray-600 text-sm">Designed a predictive analytics model leveraging AI for smarter
+                            decision-making.</p>
+                    </div>
+                    <div
+                        class="work-item group bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-50 transform transition-transform hover:scale-105">
+                        <img src="https://media.istockphoto.com/id/1342186559/photo/a-business-man-using-a-computer-to-manage-documents-online-document-communication-database.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQFDCEeEbTZpWLHoL6p_dkRYATnL4E5mxJyZObip5tQ="
+                            alt="Data Visualization Tool"
+                            class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600">Data
+                            Visualization
+                            Tool</h3>
+                        <p class="text-gray-600 text-sm">Built a dynamic tool to visualize complex datasets with clarity
+                            and
+                            precision.</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="contact py-20 bg-gradient-to-br from-blue-50 via-indigo-100 to-blue-200" id="contact">
-        <div class="container mx-auto px-6 lg:px-16">
-            <!-- Heading -->
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-extrabold text-gray-800 mb-4">Contact Me</h2>
-                <p class="text-lg text-gray-600">I'd love to hear from you! Feel free to reach out using the form or
-                    connect through my socials.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <!-- Contact Form -->
-                <div class="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                    <form action="https://formspree.io/f/xyzzzwkg" method="POST" class="space-y-8">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                            <input type="text" name="name" required
-                                class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300"
-                                placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your Email</label>
-                            <input type="email" name="email" required
-                                class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300"
-                                placeholder="john.doe@example.com">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your
-                                Message</label>
-                            <textarea name="message" rows="4" required
-                                class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300 resize-none"
-                                placeholder="Type your message here..."></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-4 px-6 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
-                            <span>Send Message</span>
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </button>
-                    </form>
+    <section class="contact py-20 bg-gradient-to-br from-blue-50 via-indigo-100 to-blue-200" id="contact"
+        style="background-image: url('https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30461.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid');">
+        <div class="container mx-auto px-4">>
+            <div class="container mx-auto px-6 lg:px-16">
+                <!-- Heading -->
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-extrabold text-white mb-4">Contact Me</h2>
+                    <p class="text-lg text-white">I'd love to hear from you! Feel free to reach out using the form or
+                        connect through my socials.</p>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="space-y-10">
-                    <!-- Info Card -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                        <div class="flex items-center gap-6">
-                            <div class="bg-blue-100 p-4 rounded-full">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                        <form action="https://formspree.io/f/xyzzzwkg" method="POST" class="space-y-8">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                                <input type="text" name="name" required
+                                    class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300"
+                                    placeholder="John Doe">
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">Location</h3>
-                                <p class="text-gray-600">Badulla, Sri Lanka</p>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your
+                                    Email</label>
+                                <input type="email" name="email" required
+                                    class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300"
+                                    placeholder="john.doe@example.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your
+                                    Message</label>
+                                <textarea name="message" rows="4" required
+                                    class="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-300 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                                    placeholder="Type your message here..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-4 px-6 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                                <span>Send Message</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-10">
+                        <!-- Info Card -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                            <div class="flex items-center gap-6">
+                                <div class="bg-blue-100 p-4 rounded-full">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">Location</h3>
+                                    <p class="text-gray-600">Badulla, Sri Lanka</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Social Links -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                        <h3 class="text-lg font-bold text-gray-800 mb-6">Follow Me</h3>
-                        <div class="flex space-x-6">
-                            <a href="https://www.facebook.com/hathisa.thissara" target="_blank" rel="noopener"
-                                class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
-                                <i class="fab fa-facebook-f text-2xl"></i>
+                        <!-- Social Links -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                            <h3 class="text-lg font-bold text-gray-800 mb-6">Follow Me</h3>
+                            <div class="flex space-x-6">
+                                <a href="https://www.facebook.com/hathisa.thissara" target="_blank" rel="noopener"
+                                    class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
+                                    <i class="fab fa-facebook-f text-2xl"></i>
 
-                            </a>
-                            <a href="https://x.com/HathisaThissara" target="_blank" rel="noopener"
-                                class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
-                                <i class="fab fa-twitter text-2xl"></i>
+                                </a>
+                                <a href="https://x.com/HathisaThissara" target="_blank" rel="noopener"
+                                    class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
+                                    <i class="fab fa-twitter text-2xl"></i>
 
-                            </a>
-                            <a href="https://www.instagram.com/hathisa.thissara" target="_blank" rel="noopener"
-                                class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
-                                <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hathisa.thissara" target="_blank" rel="noopener"
+                                    class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
+                                    <i class="fab fa-instagram text-2xl"></i>
 
-                            </a>
-                            <a href="https://www.linkedin.com/in/hathisa-thissara" target="_blank" rel="noopener"
-                                class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
-                                <i class="fab fa-linkedin-in text-2xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hathisa-thissara" target="_blank" rel="noopener"
+                                    class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
+                                    <i class="fab fa-linkedin-in text-2xl"></i>
 
-                            </a>
-                            <a href="https://github.com/hatheesha" target="_blank" rel="noopener"
-                                class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
-                                <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://github.com/hatheesha" target="_blank" rel="noopener"
+                                    class="text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-125">
+                                    <i class="fab fa-github text-2xl"></i>
 
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Embedded Map -->
-                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31692.94547937248!2d81.05414518149414!3d6.990514994699441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae57b820ba3c7cf%3A0x75876c6242aeef33!2sBadulla%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1692196035897!5m2!1sen!2s"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                        <!-- Embedded Map -->
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31692.94547937248!2d81.05414518149414!3d6.990514994699441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae57b820ba3c7cf%3A0x75876c6242aeef33!2sBadulla%2C%20Sri%20Lanka!5e0!3m2!1sen!2s!4v1692196035897!5m2!1sen!2s"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
 
-                        </iframe>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer class="bg-gray-800 text-white text-center py-4">
         <p>© 2025 Hathisa Thissara. All rights reserved.</p>
