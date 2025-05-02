@@ -16,22 +16,22 @@
             font-weight: 600;
             background-color: #00bcd4;
             border-color: #00bcd4;
-            box-shadow: 0 6px 25px rgba(0,188,212,0.2);
+            box-shadow: 0 6px 25px rgba(0, 188, 212, 0.2);
             transition: background 0.3s, box-shadow 0.3s;
         }
 
         .btn-primary:hover {
             background-color: #0097a7;
             border-color: #0097a7;
-            box-shadow: 0 8px 30px rgba(0,188,212,0.3);
+            box-shadow: 0 8px 30px rgba(0, 188, 212, 0.3);
         }
 
         .form-control {
             border-radius: 1.2rem;
             padding: 1.2rem;
             border-color: #777;
-            background: rgba(255,255,255,0.85);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             transition: transform 0.2s ease;
         }
 
@@ -49,7 +49,8 @@
             color: white;
         }
 
-        .contact-info h3, .contact-info h4 {
+        .contact-info h3,
+        .contact-info h4 {
             color: #fff;
         }
 
@@ -67,12 +68,12 @@
             border: 2px solid #00bcd4;
             transition: background 0.3s, color 0.3s, transform 0.3s;
         }
-        
+
         .social-icons a:hover {
             background: #00bcd4;
             color: #fff;
             transform: translateY(-5px) scale(1.12);
-            box-shadow: 0 4px 20px rgba(0,188,212,0.25);
+            box-shadow: 0 4px 20px rgba(0, 188, 212, 0.25);
         }
 
         .footer {
@@ -125,13 +126,20 @@
         .map-frame {
             border: none;
             min-height: 200px;
-            box-shadow: 0 4px 18px rgba(0,188,212,0.15);
+            box-shadow: 0 4px 18px rgba(0, 188, 212, 0.15);
             animation: floatMap 7s ease-in-out infinite;
         }
 
         @keyframes floatMap {
-            0%, 100% { transform: translateY(0);}
-            50% { transform: translateY(-12px);}
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
         }
 
         .fade-in {
@@ -143,6 +151,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
@@ -195,11 +204,13 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Your Email</label>
-                                <input type="email" class="form-control" name="email" placeholder="john@example.com" required>
+                                <input type="email" class="form-control" name="email" placeholder="john@example.com"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Message</label>
-                                <textarea class="form-control" name="message" rows="4" placeholder="Write something..." required></textarea>
+                                <textarea class="form-control" name="message" rows="4" placeholder="Write something..."
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">
                                 <i class="fas fa-paper-plane me-2"></i>Send Message
@@ -217,11 +228,18 @@
 
                             <h4 class="mt-4 mb-3"><i class="fas fa-share-alt me-2"></i>Socials</h4>
                             <div class="social-icons d-flex">
-                                <a href="https://www.facebook.com/hathisa.thissara" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://x.com/HathisaThissara" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/hathisa.thissara" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/hathisa-thissara" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/hatheesha" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/hathisa.thissara" target="_blank" rel="noopener"
+                                    title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/HathisaThissara" target="_blank" rel="noopener"
+                                    title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/hathisa.thissara" target="_blank" rel="noopener"
+                                    title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/hathisa-thissara" target="_blank" rel="noopener"
+                                    title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/hatheesha" target="_blank" rel="noopener" title="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" rel="noopener" id="whatsappBtn" onclick="openWhatsAppChat()"
+                                    title="whatsapp"><i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
 
@@ -245,7 +263,16 @@
         <p class="mb-1">© 2025 Hathisa Thissara. All rights reserved.</p>
         <p><a href="mailto:hatheesha6504@gmail.com" class="text-info">Contact me via Email</a></p>
     </footer>
+    <script>
+        function openWhatsAppChat() {
+            const phoneNumber = "94701207991"; // Replace with your number
+            const message = "Hello, I would like to hire you for a project."; // Your pre-written message
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
+            window.open(whatsappLink, '_blank');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
 </body>

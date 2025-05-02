@@ -78,21 +78,13 @@
 
             <!-- Buttons -->
             <div class="d-grid gap-3 d-md-flex justify-content-center">
-                <a href="https://wa.me/+94701207991"
-                    class="btn btn-outline-info px-4 animate__animated animate__fadeIn animate__delay-1s">Hire Me</a>
+                <a id="whatsappBtn"
+                    class="btn btn-outline-info px-4 animate__animated animate__fadeIn animate__delay-1s" href="#"
+                    onclick="openWhatsAppChat()">Hire Me</a>
                 <a href="assets/hathisa_thissara_2025.pdf" download
                     class="btn btn-primary px-4 animate__animated animate__fadeIn animate__delay-1s">Download CV</a>
             </div>
         </div>
-
-        <!-- Spline Viewer - Enhanced Design -->
-        <div class="position-absolute d-flex align-items-center justify-content-center"
-            style="bottom: 20px; right: 20px; width: 250px; height: 250px; border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 50%; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); overflow: hidden; background: rgba(0, 0, 0, 0.5);">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/PFFoH7Z3n8Blv2hT/scene.splinecode"
-                style="width: 100%; height: 100%; border-radius: 50%;"></spline-viewer>
-        </div>
-
     </section>
 
     <!-- Footer -->
@@ -104,6 +96,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        function openWhatsAppChat() {
+            const phoneNumber = "94701207991"; // Replace with your number
+            const message = "Hello, I would like to hire you for a project."; // Your pre-written message
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            window.open(whatsappLink, '_blank');
+        }
         document.addEventListener('DOMContentLoaded', function () {
             const dynamicTextElement = document.getElementById('dynamic-text');
             const words = ["Web Developer", "UI/UX Designer", "App Developer", "Software Developer"];
