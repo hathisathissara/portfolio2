@@ -4,38 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
+    <title>My Work</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e1e;
-            color: #e0e0e0;
+            background-color: #121212;
+            color: #fff;
         }
 
-        .navbar {
-            background-color: #212121;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 10;
-            transition: all 0.3s ease;
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #1c1c1c;
         }
 
-        .navbar .navbar-brand span {
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body {
+            background-color: #2c2c2c;
+            border-radius: 15px;
+            padding: 30px 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
             color: #00bcd4;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        .navbar-nav .nav-link {
-            color: #e0e0e0 !important;
+        .card-text {
             font-size: 1.1rem;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #00bcd4 !important;
+            font-weight: 300;
+            margin-bottom: 25px;
+            color: #e0e0e0;
         }
 
         .btn-primary {
@@ -51,88 +60,28 @@
             border-color: #0097a7;
         }
 
-        .work {
-            padding-top: 80px;
-            background: linear-gradient(135deg, rgba(34, 193, 195, 0.6), rgba(253, 187, 45, 0.6)), url('https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg?uid=R183750515&ga=GA1.1.375319987.1741079138&semt=ais_hybrid') no-repeat center center;
-            background-size: cover;
-            color: #e0e0e0;
+        .services {
+            padding: 60px 0;
         }
 
-        .work h2 {
-            font-size: 3rem;
+        .services h2 {
+            font-size: 2.5rem;
             font-weight: bold;
-            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .work-item {
-            position: relative;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            cursor: pointer;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .work-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .work-item h3 {
-            font-size: 1.5rem;
-            margin-top: 15px;
-            color: #fff;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .work-item p {
-            font-size: 1rem;
-            color: #ddd;
-            transition: opacity 0.3s ease;
-        }
-
-        .work-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            background: rgba(0, 188, 212, 0.2);
-        }
-
-        .work-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .work-item:hover h3 {
             color: #00bcd4;
         }
 
-        .work-item:hover p {
-            opacity: 1;
+        .services .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
         }
 
         footer {
-            background-color: #212121;
-            color: #e0e0e0;
+            background-color: #1c1c1c;
+            color: #ddd;
             padding: 20px 0;
-            text-align: center;
         }
 
         footer p {
@@ -143,8 +92,7 @@
 </head>
 
 <body>
-
-    <header class="navbar navbar-expand-lg navbar-dark">
+    <header class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <span class="fw-bold">Hathisa Thissara</span>
@@ -166,73 +114,99 @@
         </div>
     </header>
 
-    <section class="work py-16 bg-gray-100" id="work">
-        <div class="container mx-auto px-4">
-            <h2>Portfolio <span class="display-3 fw-bold text-info mb-3" style="text-shadow: 0 0 30px #0dcaf0;">Highlights</span></h2>
-            <div class="grid">
-                <!-- Work Item 1: Web Page -->
-                <div class="work-item group">
-                    <img src="https://images.unsplash.com/photo-1569322977266-acff659212fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2ViJTIwUGFnZXxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Web Page" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">Web Page</h3>
-                    <p class="group-hover:text-white">Crafted a responsive, modern website with seamless navigation for
-                        diverse audiences.</p>
+    <section class="services text-center" id="services">
+        <div class="container">
+            <h2 class="text-light mb-5">Portfolio <span class="text-primary">Highlights</span></h2>
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img
+                            src="https://images.unsplash.com/photo-1569322977266-acff659212fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2ViJTIwUGFnZXxlbnwwfHwwfHx8MA%3D%3D">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Crafted a responsive, modern website with seamless navigation for
+                                diverse audiences.</p>
+                            <a href="http://store.musichub.unaux.com" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Work Item 2: Coding App -->
-                <div class="work-item group">
-                    <img src="https://images.unsplash.com/photo-1554260570-47e791ab2fc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q29kaW5nJTIwQXBwfGVufDB8fDB8fHww"
-                        alt="Coding App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">Coding App</h3>
-                    <p class="group-hover:text-white">Developed a feature-rich coding environment for beginner
-                        programmers.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1554260570-47e791ab2fc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q29kaW5nJTIwQXBwfGVufDB8fDB8fHww"
+                            class="card-img-top" alt="Coding App">
+                        <div class="card-body">
+                            <h5 class="card-title">Coding App</h5>
+                            <p class="card-text">Developed a feature-rich coding environment for beginner
+                                programmers.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Work Item 3: Tech App -->
-                <div class="work-item group">
-                    <img src="https://plus.unsplash.com/premium_photo-1683262038148-2ac280407276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VGVjaCUyMEFwcHxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Tech App" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">Tech App</h3>
-                    <p class="group-hover:text-white">A robust mobile application empowering users with cutting-edge
-                        technology tools.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img src="https://plus.unsplash.com/premium_photo-1683262038148-2ac280407276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VGVjaCUyMEFwcHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="Tech App">
+                        <div class="card-body">
+                            <h5 class="card-title">Tech App</h5>
+                            <p class="card-text">A robust mobile application empowering users with cutting-edge
+                                technology tools.</p>
+                            <a href="https://github.com/hathisathissara/store-ios-app" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Work Item 4: School Management System -->
-                <div class="work-item group">
-                    <img src="https://media.istockphoto.com/id/1340516763/photo/empty-classroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=jbYGCEpqm8nTe-qwaydKnKU0zxQ1nYVMBsj2P0Sqez0="
-                        alt="School Management System"
-                        class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">School Management System</h3>
-                    <p class="group-hover:text-white">Streamlined school operations with an intuitive, all-in-one
-                        digital
-                        platform.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img src="https://media.istockphoto.com/id/1340516763/photo/empty-classroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=jbYGCEpqm8nTe-qwaydKnKU0zxQ1nYVMBsj2P0Sqez0="
+                            class="card-img-top" alt="School Management System">
+                        <div class="card-body">
+                            <h5 class="card-title">School Management System</h5>
+                            <p class="card-text">Streamlined school operations with an intuitive, all-in-one
+                                digital platform.</p>
+                            <a href="https://github.com/hathisathissara/School-Management-System" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Work Item 5: Machine Learning Model -->
-                <div class="work-item group">
-                    <img src="https://media.istockphoto.com/id/2084953049/photo/neural-network-nodes-deep-learning-artificial-intelligence-machine-learning-model.webp?a=1&b=1&s=612x612&w=0&k=20&c=kySkpXxwGqj4vuZi3UkHtDioMVvUgXDDvGzrkgonU9Q="
-                        alt="Machine Learning Model" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">Machine Learning Model</h3>
-                    <p class="group-hover:text-white">Designed a predictive analytics model leveraging AI for smarter
-                        decision-making.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img src="https://media.istockphoto.com/id/2084953049/photo/neural-network-nodes-deep-learning-artificial-intelligence-machine-learning-model.webp?a=1&b=1&s=612x612&w=0&k=20&c=kySkpXxwGqj4vuZi3UkHtDioMVvUgXDDvGzrkgonU9Q="
+                            class="card-img-top" alt="Machine Learning Model">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning Model</h5>
+                            <p class="card-text">Designed a predictive analytics model leveraging AI for smarter
+                                decision-making.</p>
+                            <a href="https://github.com/hathisathissara/track-hand" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Work Item 6: Data Visualization Tool -->
-                <div class="work-item group">
-                    <img src="https://media.istockphoto.com/id/1342186559/photo/a-business-man-using-a-computer-to-manage-documents-online-document-communication-database.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQFDCEeEbTZpWLHoL6p_dkRYATnL4E5mxJyZObip5tQ="
-                        alt="Data Visualization Tool" class="rounded-lg mb-4 transition-opacity group-hover:opacity-80">
-                    <h3 class="group-hover:text-white">Data Visualization Tool</h3>
-                    <p class="group-hover:text-white">Built a dynamic tool to visualize complex datasets with clarity
-                        and precision.</p>
+                <!-- Service Item 6: Cloud Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0" style="width: 18rem;">
+                        <img src="https://media.istockphoto.com/id/1342186559/photo/a-business-man-using-a-computer-to-manage-documents-online-document-communication-database.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQFDCEeEbTZpWLHoL6p_dkRYATnL4E5mxJyZObip5tQ="
+                            class="card-img-top" alt="Data Visualization Tool">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization Tool</h5>
+                            <p class="card-text">Built a dynamic tool to visualize complex datasets with clarity
+                                and precision</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Hathisa Thissara. All rights reserved.</p>
+    <footer class="text-center">
+        <div class="container">
+            <p class="text-light">© 2025 Hathisa Thissara. All Rights Reserved.</p>
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
 </body>
